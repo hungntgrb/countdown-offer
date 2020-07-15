@@ -55,7 +55,7 @@ const minutes = zeroPad(expireDate.getMinutes());
 const seconds = zeroPad(expireDate.getSeconds());
 
 const welcome = document.querySelector(".welcome");
-welcome.innerHTML = `Our offer ends on ${weekday}, ${day} ${month} ${year}, ${hours}:${minutes}:${seconds}`;
+welcome.innerHTML = `Our offer ends on <br/>${weekday}, ${day} ${month} ${year}, ${hours}:${minutes}:${seconds}`;
 
 const future = expireDate.getTime(); // ms
 
